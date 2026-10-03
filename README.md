@@ -1,9 +1,9 @@
 # Rapid-evolutionary-responses-to-contemporary-climate-change-in-Pinus-pinaster-despite-adaptive-lag
 
 
-This repository is associated with the study [Francisco et al. preprint](https://www.biorxiv.org/content/), titled *Rapid evolutionary responses to contemporary climate change in maritime pine (Pinus pinaster Ait.) despite widespread adaptive lag*, to be submitted.  
+This repository is associated with the study [Francisco *et al.* preprint](https://www.biorxiv.org/content/), titled *Rapid evolutionary responses to contemporary climate change in maritime pine (Pinus pinaster Ait.) despite widespread adaptive lag*, to be submitted.  
 
-Genomic data for the 82 range-wide *Pinus pinaster* populations from Olsson et al. (2025) and Francisco et al. (2026) is available at [Zenodo](https://zenodo.org/records/14950394). Genomic data for the two extensively sampled populations, Lacanau and Tocchi, from data paper WP3 is available at [Zenodo](https://zenodo.org/records/17054530).  
+Genomic data for the 82 range-wide *Pinus pinaster* populations from Olsson *et al.* (2025) and Francisco *et al.* (2026) is available at [Zenodo](https://zenodo.org/records/14950394). Genomic data for the two extensively sampled populations, Lacanau and Tocchi, from data paper WP3 is available at [Zenodo](https://zenodo.org/records/17054530).  
 
 Climate change is profoundly affecting species worldwide and poses a major threat to their long-term persistence. Although trees may have the potential for rapid adaptation to changing climates, empirical evidence remains limited, and whether these long-lived organisms can adapt quickly enough to keep pace with ongoing climate change is still an open question. We combined genomic data from 82 range-wide populations of the widespread tree *Pinus pinaster* Ait. with intensive sampling of two successive cohorts from two natural populations to investigate real-time responses to contemporary climate change. Using an original genotype-environment association (GEA) approach to quantify climate (mal)adaptation, we found that most individuals from both target populations showed evidence of an adaptive lag to current climatic conditions and are predicted to face substantial maladaptation risk under future climates. Importantly, changes in genomic composition at climate-associated loci between cohorts were consistent with rapid evolutionary responses to ongoing climate change and could not be explained by neutral demographic processes alone, as supported by forward-time genetic simulations. We also observed lower realised genetic load in the younger cohort, suggesting that the dynamics of deleterious mutations may change with climatic pressure. Our work provides evidence suggesting genetic responses to contemporary climate change within a single generation, including signals of rapid evolutionary changes in genomic composition at climate-associated loci and signatures of purifying selection, despite widespread adaptive lag to current climates. These findings challenge the view that trees respond only slowly to environmental change and highlight the need to integrate evolutionary dynamics into predictive models of species persistence under future climates.
 
@@ -17,7 +17,7 @@ The second section contains analyses of genetic diversity, extraction of histori
 
 All the scripts associated with the HTML presented below are available in the folder [Scripts](https://github.com/Thomas-Francisco/Rapid-evolutionary-responses-to-contemporary-climate-change-in-Pinus-pinaster-despite-adaptive-lag/tree/main/Scripts)
 
-The third section reuses the deleteriousness scores assigned to each mutation in [Francisco et al. (2026)](https://github.com/Thomas-Francisco/Demographic-history-shapes-forest-tree-vulnerability-to-climate-change/tree/main) to estimate genetic load. The scripts and HTML used to calculate these load are provided in this repository.
+The third section reuses the deleteriousness scores assigned to each mutation in [Francisco *et al.* (2026)](https://github.com/Thomas-Francisco/Demographic-history-shapes-forest-tree-vulnerability-to-climate-change/tree/main) to estimate genetic load. The scripts and HTML used to calculate these load are provided in this repository.
 
 ## Section one: Genetic filtering, population genetic structure, and genotype-environment associations (GEA) to identify climate-associated loci
 
@@ -32,7 +32,7 @@ mputation of missing genotypes in the second genomic dataset using the most comm
 
 #### [Climatic data selection](https://thomas-francisco.github.io/Demographic-history-shapes-forest-tree-vulnerability-to-climate-change/HTML/02_Climatic_data_example.html)
 
-- Extraction of climatic data from coordinates for populations at 30 arc-seconds using the Climate Downscaling tool (ClimateDT, Marchi et al. 2024).
+- Extraction of climatic data from coordinates for populations at 30 arc-seconds using the Climate Downscaling tool (ClimateDT, [Marchi *et al.* 2024](https://doi.org/10.3390/environments11040082)).
 - Visualisation of the climatic variation across populations
 - Identification of the main climatic drivers in our dataset by : pre-selecting the climatic variables, identifying the most important variables to explain the genomic variation using OrdiR2step, removing over-collinear variables and calculating the variance inflation factor (VIF)
 - Calculation of the present and future (corresponding to the mean values from five global climate models (GCMs) under the socio-economic pathway 3-7.0 for the 2041-2070 period) climatic data
@@ -54,7 +54,7 @@ mputation of missing genotypes in the second genomic dataset using the most comm
 
 #### [Latent factor mixed models (LFMM) candidate detection](https://thomas-francisco.github.io/Demographic-history-shapes-forest-tree-vulnerability-to-climate-change/HTML/05_LFMM_candidate_detection_example.html)
 
-- Identification of candidate loci using the multivariate approach developped in LFMM2 (Gain et al. 2020)
+- Identification of candidate loci using the multivariate approach developped in LFMM2 ([Caye *et al.* 2019](https://doi.org/10.1093/molbev/msz008))
 - Two latent factors were used to account for population genetic structure
 - **FDR 5%** threshold
 - Graphical visualisation
@@ -70,7 +70,7 @@ mputation of missing genotypes in the second genomic dataset using the most comm
 
 #### [Gradient forest (GF) candidate detection](https://thomas-francisco.github.io/Demographic-history-shapes-forest-tree-vulnerability-to-climate-change/HTML/07_Gradient_forest_candidate_detection_example.html)
 
-- Non- linear machine learning algorithm used as a GEA method by Fitzpatrick et al. (2021)
+- Non- linear machine learning algorithm used as a GEA method by [Fitzpatrick *et al.* (2021)](https://doi.org/10.1111/1755-0998.13374)
 - GF-raw not accounting for population genetic structure
 - GF-corrected accounting for population genetic structure using the LFMM-corrected matrix with two latent factors
 - Five independent runs
@@ -118,7 +118,7 @@ Analyses were performed on the Lacanau and Tocchi populations only except for th
 
 # Section three: Genetic loads computation
 
-Analyses related to the computation of the genetic load using the SnpEff and PROVEAN software were not performed in R and can be accessed in the folder [Scripts_Genetic_load](https://github.com/Thomas-Francisco/Demographic-history-shapes-forest-tree-vulnerability-to-climate-change/tree/main/Scripts_Genetic_load). First, SNPs were mapped onto the *Pinus tabuliformis* reference genome [Niu et al. 2022](10.1016/j.cell.2021.12.006). SnpEff software (version 5.1 ) was then used to identify SNPs causing amino acid changes in protein-coding sequences [Cingolani et al. 2012](10.4161/fly.19695). Finally, the functional impact of mutations was predicted using PROVEAN (version 1.1.5), a software that assesses the impact of mutations by evaluating sequence conservation and alignment scores across homologous proteins [Choi & Chan 2015](10.1093/bioinformatics/btv195). For each SNP, PROVEAN predicted its impact on the biological function of the corresponding protein and assigned a ‘deleteriousness’ score. Mutations were considered deleterious when the PROVEAN score was lower than -2.5.
+Analyses related to the computation of the genetic load using the SnpEff and PROVEAN software were not performed in R and can be accessed in the folder [Scripts_Genetic_load](https://github.com/Thomas-Francisco/Demographic-history-shapes-forest-tree-vulnerability-to-climate-change/tree/main/Scripts_Genetic_load). First, SNPs were mapped onto the *Pinus tabuliformis* reference genome [Niu *et al.* 2022](10.1016/j.cell.2021.12.006). SnpEff software (version 5.1 ) was then used to identify SNPs causing amino acid changes in protein-coding sequences [Cingolani *et al.* 2012](10.4161/fly.19695). Finally, the functional impact of mutations was predicted using PROVEAN (version 1.1.5), a software that assesses the impact of mutations by evaluating sequence conservation and alignment scores across homologous proteins [Choi & Chan 2015](10.1093/bioinformatics/btv195). For each SNP, PROVEAN predicted its impact on the biological function of the corresponding protein and assigned a ‘deleteriousness’ score. Mutations were considered deleterious when the PROVEAN score was lower than -2.5.
 Potential and realised genetic loads were then computed using this SNP annotation in R, along with graphical visualisation and populations and cohorts comparisons. 
 
 #### [6. Within-population variability in climate adaptation and evolutionary responses](https://thomas-francisco.github.io/Rapid-evolutionary-responses-to-contemporary-climate-change-in-Pinus-pinaster-despite-adaptive-lag/HTML/6_Genetic_load_Ppinaster_study.html)
