@@ -1,7 +1,7 @@
 # Rapid-evolutionary-responses-to-contemporary-climate-change-in-Pinus-pinaster-despite-adaptive-lag
 
 
-This repository is associated with the study [Francisco *et al.* preprint](https://www.biorxiv.org/content/), titled *Rapid evolutionary responses to contemporary climate change in maritime pine (Pinus pinaster Ait.) despite widespread adaptive lag*, to be submitted.  
+This repository is associated with the study [Francisco *et al.* preprint](https://www.biorxiv.org/content/10.64898/2026.10.14.759087v1), titled *Rapid evolutionary responses to contemporary climate change in maritime pine (Pinus pinaster Ait.) despite widespread adaptive lag*, to be submitted.  
 
 Genomic data for the 82 range-wide *Pinus pinaster* populations from [Olsson *et al.* (2025)](https://onlinelibrary.wiley.com/doi/10.1111/eva.70145) and [Francisco *et al.* (2026)](https://www.biorxiv.org/content/10.64898/2026.03.10.710859v2) is available at [Zenodo](https://zenodo.org/records/14950394). Genomic data for the two extensively sampled populations, Lacanau and Tocchi, from Belmokhtar *et al.* (2026) is available at [Zenodo](https://zenodo.org/records/17054530).  
 
